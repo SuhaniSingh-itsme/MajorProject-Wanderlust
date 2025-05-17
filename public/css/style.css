@@ -1,0 +1,302 @@
+html,
+body {
+    /* font-family: "Plus Jakarta Sans", serif !important; */
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    background-color: #EDF4F8;;
+}
+
+.container {
+    flex: 1;
+}
+
+/* navbar */
+.navbar {
+    height: 4.5rem;
+    background-color: #2F4858;
+    color: #FFFFFF;
+}
+
+.fa-compass {
+    color: #F6AE2D;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-link:hover {
+    color: #A0C1D1 !important;
+}
+
+.nav-home {
+    margin-right: 5px !important;
+}
+
+/* Footer */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2F4858;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    /* color: #222222; */
+    color: #F4F4F9;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color:	#A0C1D1;
+}
+
+
+.f-info {
+    text-align: center;
+    min-height: 50px;
+    height: 8rem;
+    background-color: #2F4858;
+    color:	#A0C1D1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+    background-color: #FFFFFF;
+    border-radius: 1rem !important;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 6px;
+    
+}
+
+.listing-card:hover {
+    box-shadow: 0 8px 20px #6aafdd !important;
+    transition: box-shadow 0.3s ease-in-out 0.2s;
+}
+
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+    color: #222222;
+}
+
+.show-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+ 
+  background-color: white;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color:#E1ECF4;
+}
+
+/* trending card */
+.card-container {
+    display: flex;
+    gap: 50px; /* Adjust spacing between cards here */
+    flex-wrap: nowrap;
+   
+}
+
+.show-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* New Page */
+.btn.add-btn {
+    background-color: #589fc2 !important;
+    border: none !important;
+}
+
+/* Edit Page */
+.edit-btn {
+    background-color: #589fc2 !important;
+    border: none !important;
+}
+
+/* Show Page */
+.show-img {
+    height: 30vh;
+    width: 50%;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Map */
+#map {
+    height: 400px;
+    width: 80vh;
+}
+
+/* Signup */
+.shadow-sm {
+    width: 100%;
+    max-width: 430px;
+    height: auto;  
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.shadow-sm:hover {
+    box-shadow: 0 8px 20px #6aafdd !important;
+}
+
+.custom-signup-btn {
+    background-color: #20c997;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.custom-signup-btn:hover {
+    background-color: #17b38a;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-signup-btn:active {
+    background-color: #149e79;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+/* Login */
+.card-sm {
+    width: 100%;
+    max-width: 430px;
+    height: auto;  
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+
+.card-sm:hover {
+    box-shadow: 0 8px 20px #6aafdd !important;
+}
+
+.custom-login-btn {
+    background-color: #20c997;
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.custom-login-btn:hover {
+    background-color: #17b38a;
+    color: white;
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.custom-login-btn:active {
+    background-color: #149e79;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.rotate-icon {
+    animation: rotate 2s linear infinite;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rotate-icon:hover {
+    color: #A0C1D1;
+}
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
