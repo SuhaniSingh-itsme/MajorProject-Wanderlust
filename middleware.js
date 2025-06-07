@@ -62,14 +62,6 @@ module.exports.isReviewAuthor = async(req, res, next) => {
     next();
 }
 
-module.exports.isCurrUser = async(req, res, next) => {
-    if(!req.isAuthenticated()) {
-        const { id } = req.params;
-        req.session.redirectUrl = `/listings/${id}`;
-        req.flash("error", "you must login first!");
-        return res.redirect("/login");
-    } 
-    next();
-}
+
 
 
