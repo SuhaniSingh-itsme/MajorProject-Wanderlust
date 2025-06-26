@@ -25,7 +25,9 @@ const userRouter = require("./routes/user.js");
 const dbUrl = process.env.ATLASDB_URL;
 
 main().then((res) => {
-    console.log("connected to DB")})
+    console.log("connected to DB");
+    // require('./init/index.js');
+})
     .catch((err) => {
         console.log(err);
 });
@@ -67,7 +69,7 @@ app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
 app.get("/", (req, res) => {
-    res.send("Hi, I'm root")
+     res.redirect("/listings");
 });
 
 app.use(session(sessionOptions));
