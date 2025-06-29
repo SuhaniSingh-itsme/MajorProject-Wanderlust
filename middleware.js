@@ -59,7 +59,7 @@ module.exports.isReviewAuthor = async(req, res, next) => {
             req.flash("error", "You are not the author of this review");
             return res.redirect(`/listings/${id}`);
     }
-   
+    next();
 }
 
 

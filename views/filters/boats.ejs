@@ -1,6 +1,6 @@
 <% layout("/layouts/boilerplate.ejs") %>
 
-    <h1 class="mt-2" style="margin-bottom:32px; font-weight: 700;"><span class="icon" style="font-size: 1.8rem">🚤</span>Boats</h1>
+    <h1 class="mt-2" style="margin-bottom:32px; font-weight: 700;"><span class="icon" style="font-size: 1.8rem">🚤 </span>Boats</h1>
     <div class="card-container row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 mt-3">
         <div class="col mt-3">
             <h3><%= listing1.title %></h3>
@@ -35,6 +35,25 @@
                     <p class="card-text-trend">&#8377; <%= listing2.price.toLocaleString("en-IN") %></p>
                     <p class="card-text-trend"><%= listing2.location %></p>
                     <p class="card-text-trend"><%= listing2.country %></p>
+                </div>
+            </div>
+        </div>
+
+<!-- Third card -->
+        <div class="col mt-3">
+            <h3><%= listing3.title %></h3>
+            <div class="card show-card listing-card">
+                <img 
+                    src="<%=  listing3.image.url %>" 
+                    class="card-img-top" 
+                    alt="listing_image" 
+                    style="height: 17.5rem" />
+
+                <div class="card-body-trend">
+                    <p class="card-text-trend"><%= listing3.description %></p>
+                    <p class="card-text-trend">&#8377; <%= listing3.price.toLocaleString("en-IN") %></p>
+                    <p class="card-text-trend"><%= listing3.location %></p>
+                    <p class="card-text-trend"><%= listing3.country %></p>
                 </div>
             </div>
         </div>

@@ -6,8 +6,8 @@ const geocodingClient = mbxGeocoding({ accessToken: mapToken });
 
 module.exports.trendingListing = async (req, res) => {
     try {
-        const listing1 = await Listing.findOne({ title: "Cliffside Luxury Escape" });
-        const listing2 = await Listing.findOne({ title: "Macao Beach" });
+        const listing1 = await Listing.findOne({ title: "Thermes Cliffside Villa" });
+        const listing2 = await Listing.findOne({ title: "Cliffside Haven in Granada" });
         console.log(listing1, listing2);
         res.render("filters/trending.ejs", { listing1, listing2 });
     } catch (error) {
@@ -17,7 +17,7 @@ module.exports.trendingListing = async (req, res) => {
 };
 
 module.exports.roomsListing = async(req, res) => {
-    let listing1 = await Listing.findOne({title: "Art Deco Apartment in Miami"});
+    let listing1 = await Listing.findOne({title: "Glamour by the Shore"});
     let listing2 = await Listing.findOne({title: "Modern Loft in Downtown"});
     console.log(listing1, listing2);
     res.render("filters/rooms.ejs", {listing1, listing2});
@@ -30,37 +30,38 @@ module.exports.citiesListing = async(req, res) => {
 }
 
 module.exports.mountainListing = async(req, res) => {
-    let listing1 = await Listing.findOne({title: "Tso Moriri"});
-    let listing2 = await Listing.findOne({title: "Mountain Retreat"});
-    let listing3 = await Listing.findOne({title: "Mornington Mountain Estate"});
+    let listing1 = await Listing.findOne({title: "Mountain Retreat"});
+    let listing2 = await Listing.findOne({title: "Above the Clouds"});
+    let listing3 = await Listing.findOne({title: "Changthang Serenity"});
     console.log(listing1, listing2, listing3);
     res.render("filters/mountain.ejs", {listing1, listing2, listing3});
 }
 
 module.exports.castlesListing = async(req, res) => {
-    let listing = await Listing.findOne({title: "Zermatt Alpine Chalet"});
-    console.log(listing);
-    res.render("filters/castles.ejs", {listing});
+    let listing1 = await Listing.findOne({title: "Zermatt Alpine Chalet"});
+    let listing2 = await Listing.findOne({title: "Spring Whispers at Hirosaki"});
+    console.log(listing1, listing2);
+    res.render("filters/castles.ejs", {listing1, listing2});
 }
 
 module.exports.poolsListing = async(req, res) => {
-    let listing1 = await Listing.findOne({title: "Ubud Jungle Pool Villa"});
-    let listing2 = await Listing.findOne({title: "Beachfront Villa in Greece"});
+    let listing1 = await Listing.findOne({title: "Azure Escape by the Bay"});
+    let listing2 = await Listing.findOne({title: "Ubud Jungle Pool Villa"});
     console.log(listing1, listing2);
     res.render("filters/pools.ejs", {listing1, listing2});
 }
 
 module.exports.campingListing = async(req, res) => {
-    let listing = await Listing.findOne({title: "Yukon Northern Lights Camping"});
-    console.log(listing);
-    res.render("filters/camping.ejs", {listing});
+    let listing1 = await Listing.findOne({title: "Frozen Fires in the Sky"});
+    let listing2 = await Listing.findOne({title: "Luxury Glamping at Thiksey"});
+    console.log(listing1, listing2);
+    res.render("filters/camping.ejs", {listing1, listing2});
 }
 
 module.exports.farmsListing = async(req, res) => {
-    let listing1 = await Listing.findOne({title: "Cozy Farm Retreat"});
-    let listing2 = await Listing.findOne({title: "Tranquil Trails of the Hills"});
-    console.log(listing1, listing2);
-    res.render("filters/farms.ejs", {listing1, listing2});
+    let listing = await Listing.findOne({title: "Meadowview Country Retreat"});
+    console.log(listing);
+    res.render("filters/farms.ejs", {listing});
 }
 
 module.exports.arcticListing = async(req, res) => {
@@ -71,20 +72,21 @@ module.exports.arcticListing = async(req, res) => {
 }
 
 module.exports.breakfastsListing = async(req, res) => {
-    let listing = await Listing.findOne({title: "Hever Castle Retreat"});
+    let listing = await Listing.findOne({title: "Crescent Lily Bliss"});
     console.log(listing);
     res.render("filters/breakfasts.ejs", {listing});
 }
 
 module.exports.boatsListing = async(req, res) => {
-    let listing1 = await Listing.findOne({title: "Lake Moraine"});
-    let listing2 = await Listing.findOne({title: "Lake Louise: Nature's Gem"});
-    console.log(listing1, listing2);
-    res.render("filters/boats.ejs", {listing1, listing2});
+    let listing1 = await Listing.findOne({title: "Dominican Bliss"});
+    let listing2 = await Listing.findOne({title: "Moraine Lake Serenity"});
+    let listing3 = await Listing.findOne({title: "Adriatic Serenity"});
+    console.log(listing1, listing2, listing3);
+    res.render("filters/boats.ejs", {listing1, listing2, listing3});
 }
 
 module.exports.domesListing = async(req, res) => {
-    let listing = await Listing.findOne({title: "The Arctic Realm"});
+    let listing = await Listing.findOne({title: "Celestial Ice Castle"});
     console.log(listing);
     res.render("filters/domes.ejs", {listing});
 }
